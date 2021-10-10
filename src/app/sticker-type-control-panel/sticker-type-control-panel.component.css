@@ -1,7 +1,7 @@
 #typeControlPanel{
     width: 200px;
     padding: 10px;
-    background-color: rgb(255, 232, 21);
+    background-color:chartreuse;
     transition: .2s;
     overflow: hidden;
     align-content: flex-start;

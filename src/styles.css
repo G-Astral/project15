@@ -9,7 +9,7 @@ h2 {
 
 .title {
   resize: none;
-  background-color: rgb(255, 232, 21);
+  background-color: chartreuse;
   border: none;
   font-family: 'Caveat', cursive;
   font-size: 1.8em;
@@ -23,14 +23,16 @@ h2 {
 .textarea {
   resize: none;
   flex-grow: 1;
-  background-color: rgb(255, 232, 21);
+  background-color: chartreuse;
   border: none;
   font-family: 'Caveat', cursive;
   outline: none;
 }
-body{
+
+body {
   font-size: 16px;
 }
-.hasError{
+
+.hasError {
   color: red;
 }
