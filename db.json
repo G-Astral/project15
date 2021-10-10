@@ -1,0 +1,50 @@
+{
+  "stickers": [
+    {
+      "title": "Sadasd",
+      "text": "sadas",
+      "type": 1,
+      "date": 1622565457013,
+      "id": 1,
+      "lastEdited": 1622713350518
+    },
+    {
+      "title": "Sadas",
+      "text": "sadasd",
+      "type": 3,
+      "date": 1622642498212,
+      "id": 10,
+      "lastEdited": 1622740115849
+    },
+    {
+      "title": "Фыsdadaвф",
+      "text": "ывфвфвфвфasdasв",
+      "type": 2,
+      "date": 1622713222121,
+      "lastEdited": 1622740097022,
+      "id": 12
+    },
+    {
+      "title": "Sdasd",
+      "text": "asdas",
+      "type": 2,
+      "date": 1622713589528,
+      "id": 7,
+      "lastEdited": 1622713694782
+    }
+  ],
+  "types": [
+    {
+      "id": 0,
+      "name": "None"
+    },
+    {
+      "id": 1,
+      "name": "Text"
+    },
+    {
+      "id": 2,
+      "name": "Time"
+    }
+  ]
+}
