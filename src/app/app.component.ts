@@ -37,10 +37,10 @@ export class AppComponent implements OnInit {
       this.stickers = await this.httpServ.getStickers()
     }catch(err){
       console.log(err);
-      
+
     }finally{
       this.stickers.sort((a,b)=>{
-        return a.id-b.id      
+        return a.id-b.id
       })
       if(this.stickers.length>0){
         this.idCounter = this.stickers[this.stickers.length-1].id
@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
       await this.httpServ.postSticker(sticker)
     }catch(err){
       console.log(err);
-      
+
     }finally{
       this.getStickers()
     }
@@ -70,45 +70,33 @@ export class AppComponent implements OnInit {
       await this.httpServ.deleteSticker(id)
     }catch(err){
       console.log(err);
-      
+
     }finally{
       this.getStickers()
     }
   }
   async editSticker(sticker:Sticker){
     try{
-      await this.httpServ.editSticker(sticker)    
+      await this.httpServ.editSticker(sticker)
     }catch(err){
       console.log(err);
     }finally{
       this.getStickers()
     }
   }
-  // cloneArr(arr:any[]) {
-  //   let semiArr:any = []
-  //   for (let i = 0; i < arr.length; i++) {
-  //     if (Array.isArray(arr[i])) {
-  //       semiArr[i] = this.cloneArr(arr[i])
-  //     } else {
-  //       semiArr[i] = arr[i]
-  //     }
-  //   }
-  //   return semiArr
-  // }
   async getTypes(){
     try{
       this.stickerTypes = await this.httpServ.getStickerTypes()
-      // this.stickerTypes = this.cloneArr(await this.httpServ.getStickerTypes())
       console.log(this.stickerTypes);
-      
+
     }catch(err){
       console.log(err);
     }
-    
+
   }
   async typeEdit(){
     await this.getTypes()
-    this.getStickers()    
+    this.getStickers()
   }
   ngOnInit(){
     this.getStickers()

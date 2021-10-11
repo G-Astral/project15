@@ -35,9 +35,9 @@ export class StickerComponent implements OnInit {
     this.stickerForm.get('title')?.setValue(this.data.title)
     this.stickerForm.get('text')?.setValue(this.data.text)
     this.stickerForm.get('type')?.setValue(this.initId)
-    this.oldTitle = this.data.title 
-    this.oldText = this.data.text 
-    this.oldDate = this.data.date 
+    this.oldTitle = this.data.title
+    this.oldText = this.data.text
+    this.oldDate = this.data.date
   }
   turnOffEditing(ending:boolean){
     if(ending){
@@ -52,7 +52,7 @@ export class StickerComponent implements OnInit {
     }
     this.editing = false
   }
-  
+
   deleteSticker() {
     this.stickerDelete.emit(this.data.id)
   }
@@ -63,9 +63,8 @@ export class StickerComponent implements OnInit {
       type: [0,[Validators.maxLength(15)]]
     }
     this.stickerForm = this.fb.group(controls)
-    let buf = Object.assign({}, this.data)
     this.initId = this.data.type
-    
+
   }
 
 }
